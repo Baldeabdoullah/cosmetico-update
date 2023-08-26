@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./source/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="entete-promo">
+      <p>Livraison gratuite à partir de 50 000 FCFA de commande</p>
+    </div>
+
+    <!-- ENTETE -->
+
+    <div class="entete-accueil">
+      <div class="entete-toggle">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </div>
+
+      <div class="entete-input">
+        <input type="text" placeholder="recchercher un produit" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="entete-nom">
+        <h1>Cosmetico</h1>
+      </div>
+
+      <div class="entete-icone">
+        <!-- <i class="fa-regular fa-user"></i> -->
+        <i class="fa-solid fa-bag-shopping"></i>
+
+        <span class="cart-count"></span>
+
+      </div>
+    </div>
+
+    <!--LE PANIER-->
+
+
+
+  <div class="cart-container">
+<!--   
+    <div class="cart-item">
+      <img src="./source/images/product-01.jpg" alt="" />
+  
+      <div class="cart-item-text">
+        <p>Produit1</p>
+  
+        <span class="cart-item-price" > 10000 </span>
+
+        <span>FCFA</span>
+      </div>
+  
+      <a href="#">
+        <i class="fa-solid fa-trash"></i>
+      </a>
+    </div>
+  
+    <div class="cart-item">
+  
+      <img src="./source/images/product-01.jpg" alt="" />
+  
+      <div class="cart-item-text">
+        <p>Produit1</p>
+  
+        <span class="cart-item-price" > 10000 </span>
+
+        <span>FCFA</span>
+      </div>
+  
+      <a href="#">
+        <i class="fa-solid fa-trash"></i>
+      </a>
+  
+    </div> -->
+  
+    <div class="cart-total">
+      <p>TOTAL</p>
+  
+      <span class="total-amount"></span>
+
+      <span>FCFA</span>
+    </div>
+
+  </div>
+
+
+    <!--FIN DU  PANIER-->
+
+    <!-- LE MENU -->
+
+    <div class="menu">
+      <ul class="ul">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Boutiques</a></li>
+        <li><a href="#">Offres</a></li>
+        <li><a href="#">Contacte</a></li>
+      </ul>
+    </div>
+
+    <!-- LE CAROUSSEL -->
+
+    <div class="slider">
+      <div class="slide current">
+        <div class="content">
+          <h1>Cosmetico</h1>
+          <p>
+            Fabriqués à partir d'ingrédients propres et non toxiques, nos
+            produits sont conçus pour tout le monde.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h1>Révéler La Beauté de la peau</h1>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h1>Concue par des Dermatologues experimentées</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LA COLLECTION -->
+
+    <section id="COLLLECTION">
+      <div class="collection">
+        <div class="colection-image">
+          <div class="colection-contenu">
+            <h2>Collection d'été</h2>
+            <h3>
+              <a href="#"
+                >A partir de 17 000 FCFA
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="colection-image">
+          <div class="colection-contenu">
+            <h2>Les nouveautées</h2>
+            <h3>
+              <a href="#"
+                >Voir les Nouveautées
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="colection-image">
+          <div class="colection-contenu">
+            <h2>Achetez 1 et repartez avec un 1</h2>
+            <h3>
+              <a href="#"
+                >A partir de 7 000 FCFA
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LES MEILLEURS VENTES -->
+    <section id="VENTES">
+      <h1 class="best-sell-title">Nos meilleurs ventes</h1>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-01.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Nettoyant pour le visage</h4>
+              <h5>15000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-02.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Serum rajeunissant</h4>
+              <h5>11000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-03.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Crème caffeine</h4>
+              <h5>12000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-04.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Nétoyant facial</h4>
+              <h5>9000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-05.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>nettoyant pour le visage</h4>
+              <h5>15000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-06.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Pommade pour le visage</h4>
+              <h5>16000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <!-- PROMOTION -->
+
+    <section id="PROMOTION">
+      <h1 class="best-sell-title">Promotions</h1>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-07.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Nettoyant pour le visage</h4>
+              <h5>15000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-08.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Serum rajeunissant</h4>
+              <h5>11000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-09.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Crème caffeine</h4>
+              <h5>12000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-10.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Nétoyant facial</h4>
+              <h5>9000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-11.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>nettoyant pour le visage</h4>
+              <h5>15000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+
+          <!-- debut du slide -->
+          <div class="swiper-slide">
+            <div class="best-sell">
+              <div class="best-sell-img">
+                <img src="./source/images/product-01.jpg" alt="" />
+
+                <div class="best-sell-img-icone">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-sell-text">
+              <h4>Pommade pour le visage</h4>
+              <h5>16000 FCFA</h5>
+            </div>
+          </div>
+
+          <!-- fin du slide -->
+        </div>
+      </div>
+    </section>
+
+    <!-- LES EVENEMENTS -->
+
+    <section id="EVENEMENT">
+      <div class="event-container">
+        <div class="event-item">
+          <img src="./source/images/banner-1.jpg" alt="" />
+          <div class="event-item-text">
+            <h2>Nouvelle Collection</h2>
+            <h1>Decouvrer nos nouveaux soins de peau</h1>
+            <br />
+            <br />
+            <a href="#">Voir plus</a>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <img src="./source/images/banner-2.jpg" alt="" />
+          <div class="event-item-text">
+            <h2>Reduction de 25%</h2>
+            <h1>Maquillage de gamme étendue pour chaque type de peau.</h1>
+            <br />
+            <br />
+            <a href="#">Boutique</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFOS -->
+
+    <section id="INFOS">
+      <h1 class="infos-title">Pourquoi Choisir Cosmetico ?</h1>
+
+      <div class="infos-container">
+        <div class="infos-item">
+          <i class="fa-solid fa-seedling fa-4x"></i>
+          <h2>Pureté garantie</h2>
+          <p>
+            Toutes les formulations Grace adhèrent à des normes de pureté
+            strictes et ne contiendront jamais d'ingrédients agressifs ou
+            toxiques
+          </p>
+        </div>
+
+        <div class="infos-item">
+          <i class="fa-regular fa-heart fa-4x"></i>
+          <h2>Des prix compétitifs</h2>
+          <p>
+            Toutes les formulations Grace adhèrent à des normes de pureté
+            strictes et ne contiendront jamais d'ingrédients agressifs ou
+            toxiques
+          </p>
+        </div>
+
+        <div class="infos-item">
+          <i class="fa-solid fa-spray-can-sparkles fa-4x"></i>
+          <h2>ingrédients Locaux</h2>
+          <p>
+            Toutes les formulations Grace adhèrent à des normes de pureté
+            strictes et ne contiendront jamais d'ingrédients agressifs ou
+            toxiques
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFRE SPECIALE -->
+
+    <section id="OFFER">
+      <div class="offer-container">
+        <div class="offer-item">
+          <div class="offer">
+            <img src="./source/images/offer-banner-1.jpg" alt="" />
+          </div>
+
+          <div class="offer">
+            <img src="./source/images/offer-banner-2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="offer-item-text">
+          <h3>Offre spéciale</h3>
+          <h1>Bain De Douche</h1>
+          <p>
+            Fabriqués à partir d'ingrédients propres et non toxiques, nos
+            produits sont conçus pour tout le monde.
+          </p>
+          <br />
+
+          <a href="#">Voir</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOUVEAUTE -->
+    <section id="DISCOVER">
+      <h1 class="discover-title">Plus de decouverte</h1>
+
+      <div class="discover-content">
+        <div class="discover-item">
+          <div class="discover-img-container">
+            <img src="./source/images/blog-1.jpg" alt="" />
+          </div>
+
+          <div>
+            <a href="#"
+              >Trouver une boutiques <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="discover-item">
+          <div class="discover-img-container">
+            <img src="./source/images/blog2.jpg" alt="" />
+          </div>
+          <div>
+            <a href="#">Notre Blog <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="discover-item">
+          <div class="discover-img-container">
+            <img src="./source/images/blog3.jpg" alt="" />
+          </div>
+
+          <div>
+            <a href="#"
+              >Notre Histoire <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <div id="FOOTER">
+      <div class="footer-content">
+        <div class="footer-infos">
+          <div class="company-store-infos space-footer">
+            <h3>Notre Company</h3>
+            <p>Trouver un magasin proche</p>
+            <a href="#">Nos Magasins</a>
+            <p><strong>+221 78 987 98 56</strong></p>
+            <p>cosmetico@gmail.com</p>
+          </div>
+
+          <div class="lien-utile space-footer">
+            <h3><strong>Liens utiles</strong></h3>
+            <ul>
+              <li>Nouveaux produits</li>
+              <li>Meilleurs ventes</li>
+              <li>Carte de fidélité</li>
+              <li>Economisez</li>
+            </ul>
+          </div>
+
+          <div class="useful-infos space-footer">
+            <h3><strong>Informations utiles</strong></h3>
+            <ul>
+              <li>Term et conditions</li>
+              <li>Contactez nous</li>
+              <li>FAQ</li>
+              <li>Conditions de remboursements</li>
+            </ul>
+          </div>
+
+          <div class="inscription-container space-footer">
+            <h2><strong>Email</strong></h2>
+            <p>
+              Entrez votre email et <br />
+              inscrivez vous pour recevoir des notifications
+            </p>
+
+            <input
+              type="text"
+              placeholder="entrez votre email"
+              class="inscription-input"
+            />
+            <a href="#" class="inscription">Inscription</a>
+          </div>
+        </div>
+
+        <div class="last-content">
+          <div class="credit">
+            <a href="#">©2022 Crée par Abdoullah Balde</a>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+
+          <div class="nom">
+            <h2><a href="$"> Cosmetico</a></h2>
+          </div>
+
+          <div class="paiement">
+            <img src="./source/images/pay.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./source/js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        speed: 2000,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+          },
+
+          510: {
+            slidesPerView: 2.2,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+          },
+
+          900: {
+            slidesPerView: 3.2,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+          },
+
+          1100: {
+            slidesPerView: 5.2,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
